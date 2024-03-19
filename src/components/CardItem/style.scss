@@ -1,0 +1,87 @@
+// style.scss
+
+.col-md-3 {
+    @media (max-width: 767.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.card {
+    /* Card background color */
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    /* Card border */
+    border-radius: 0.25rem;
+    /* Card border radius */
+    height: 100%;
+    /* Ensure card fills container height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Card shadow */
+    transition: transform 0.3s ease;
+    /* Add transition for zoom effect */
+    margin-top: 30px;
+}
+
+.h-100 {
+    background: #ffc5c5 !important;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* Scale up on hover */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Ensure card body fills card height */
+    padding: 20px;
+    /* Padding inside card body */
+}
+
+.summary-wrapper {
+    flex-grow: 1;
+    /* Allow summary to grow within card body */
+    overflow: hidden;
+    /* Hide overflow */
+    max-height: 100px;
+    /* Limit summary height */
+}
+
+.scrollable {
+    overflow-y: auto;
+    /* Enable scrolling for overflow */
+}
+
+.card-title {
+    font-size: 16px;
+    /* Title font size */
+    font-weight: bold;
+    /* Title font weight */
+    margin-bottom: 10px;
+    /* Space below title */
+}
+
+.card-subtitle {
+    font-size: 14px;
+    /* Subtitle font size */
+    color: #666666;
+    /* Subtitle text color */
+    margin-bottom: 10px;
+    /* Space below subtitle */
+}
+
+.card-text {
+    font-size: 14px;
+    /* Text font size */
+    line-height: 1.5;
+    /* Line height for text */
+}
+
+.col-md-3:nth-child(n+5) {
+    margin-top: 20px; /* Adjust as needed */
+}

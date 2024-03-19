@@ -1,0 +1,31 @@
+.searchContainer {
+    margin-top: 2%;
+
+    .searchBox {
+        padding: 10px 20px;
+        background-color: #D6D3F0;
+        font-size: 16px;
+        outline: none;
+        border: none;
+    }
+
+    .searchButton {
+        padding: 12px 24px;
+        background-color: #3a15d0;
+        color: #D6D3F0;
+        cursor: pointer;
+        margin-left: 5px;
+
+        &:hover {
+            color: #56a0c2;
+            background-color: #e68d8d;
+        }
+    }
+
+    .errorText {
+        background-color: #D21F3C;
+        color: #f0f0f0;
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+}

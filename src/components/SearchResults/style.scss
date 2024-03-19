@@ -1,0 +1,33 @@
+.resultContainer {
+    position: relative;
+    width: 21%;
+    z-index: 10;
+
+    .ul-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 75%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-height: 300px;
+        overflow-y: scroll;
+        background-color: #D6D3F0;
+
+        .li-list {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+
+        .li-list:last-child {
+            border-bottom: none;
+        }
+
+        .li-list:hover {
+            background-color: #e68d8d;
+        }
+    }
+}
